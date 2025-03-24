@@ -1,0 +1,20 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: $font-stack;
+    background-color: $color-bg;
+    color: $color-text;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 1rem;
+}

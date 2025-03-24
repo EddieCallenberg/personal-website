@@ -1,0 +1,15 @@
+.btn {
+    display: inline-block;
+    background-color: $color-accent;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+
+    &:hover {
+        box-shadow: $shadow-default;
+        cursor: pointer;
+    }
+}

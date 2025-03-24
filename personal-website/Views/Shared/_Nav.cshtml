@@ -1,0 +1,16 @@
+﻿@{
+    var navLinks = new[]
+    {
+        new { Title = "Home", Action = "Index" },
+        new { Title = "Projects", Action = "Projects" },
+        new { Title = "About", Action = "About" },
+        new { Title = "Contact", Action = "Contact" }
+    };
+}
+
+<nav class="site-nav d-flex gap-4 align-items-center">
+    @foreach (var link in navLinks)
+    {
+        <a asp-controller="Home" asp-action="@link.Action" class="nav-link text-dark">@link.Title</a>
+    }
+</nav>

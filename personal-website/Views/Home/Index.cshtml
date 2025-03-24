@@ -1,8 +1,21 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
+    var navLinks = new[]
+    {
+        new { Title = "Home", Action = "Index" },
+        new { Title = "Projects", Action = "Projects" },
+        new { Title = "About", Action = "About" },
+        new { Title = "Contact", Action = "Contact" }
+    };
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="wrapper">
+    <!-- Hero Section -->
+    <section class="hero text-center py-5">
+        <div class="container">
+            <img src="https://via.placeholder.com/150" alt="Profile Image" class="mb-4 rounded-circle" width="150" height="150" />
+            <h1 class="mb-3">Hello, I’m a Developer</h1>
+            <p class="lead text-muted">I build clean, functional websites and games using modern tools.</p>
+        </div>
+    </section>
 </div>
