@@ -11,11 +11,5 @@
 
 <div class="wrapper">
     <!-- Hero Section -->
-    <section class="hero text-center py-5">
-        <div class="container">
-            <img src="~/images/placeholderperson.jpg" alt="Profile Image" class="mb-4 rounded-circle" />
-            <h1 class="mb-3">Hello, I’m a Developer</h1>
-            <p class="lead text-muted">I build clean, functional websites and games using modern tools.</p>
-        </div>
-    </section>
+    @await Html.PartialAsync("Sections/_Hero")
 </div>
