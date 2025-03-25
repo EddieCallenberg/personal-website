@@ -2,5 +2,33 @@
   {
     "outputFile": "wwwroot/css/style.css",
     "inputFile": "Styles/style.scss"
+  },
+  {
+    "outputFile": "Styles/_components/_nav.css",
+    "inputFile": "Styles/style.scss"
+  },
+  {
+    "outputFile": "wwwroot/js/theme-toggle.es5.js",
+    "inputFile": "wwwroot/js/theme-toggle.js"
+  },
+  {
+    "outputFile": "Styles/_layout.css",
+    "inputFile": "wwwroot/js/theme-toggle.js"
+  },
+  {
+    "outputFile": "Styles/_components/_nav.css",
+    "inputFile": "wwwroot/js/theme-toggle.js"
+  },
+  {
+    "outputFile": "Styles/_components/_nav.css",
+    "inputFile": "wwwroot/js/theme-toggle.js"
+  },
+  {
+    "outputFile": "Styles/_components/_nav.css",
+    "inputFile": "wwwroot/js/theme-toggle.js"
+  },
+  {
+    "outputFile": "Styles/_utilities.css",
+    "inputFile": "Styles/_utilities.scss"
   }
 ]

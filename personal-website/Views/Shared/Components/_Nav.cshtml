@@ -1,0 +1,27 @@
+﻿<nav>
+    <div class="container nav-inner">
+        <div class="burger-menu-container">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="nav-links">
+            @foreach (var link in new[] {
+            new { Title = "Home", Action = "Index" },
+            new { Title = "Projects", Action = "Projects" },
+            new { Title = "About", Action = "About" },
+            new { Title = "Contact", Action = "Contact" }
+            })
+            {
+                <a asp-controller="Home" asp-action="@link.Action" class="nav-link">@link.Title</a>
+            }
+        </div>
+
+        <div class="theme-toggle" id="themeToggle" title="Toggle Theme">
+            <i class="fas fa-sun icon-sun"></i>
+            <div class="toggle-slider">
+                <div class="toggle-thumb"></div>
+            </div>
+            <i class="fas fa-moon icon-moon"></i>
+        </div>
+    </div>
+</nav>

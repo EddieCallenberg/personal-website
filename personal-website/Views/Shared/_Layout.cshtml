@@ -1,17 +1,19 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<script src="~/js/theme-toggle.js"></script>
 <body>
     <header>
-        @await Html.PartialAsync("_Nav")
+        @await Html.PartialAsync("Components/_Nav")
     </header>
     @RenderBody()
-    <footer class="text-center text-muted py-4 mt-auto">
+    <footer class="text-center text-muted py-4 mt-auto mb-2 mt-2">
         <div class="container">
             &copy; 2025 - MyPortfolio
         </div>

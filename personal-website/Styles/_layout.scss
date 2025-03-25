@@ -2,8 +2,9 @@ html, body {
     height: 100%;
     margin: 0;
     font-family: $font-stack;
-    background-color: $color-bg;
-    color: $color-text;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .wrapper {
@@ -14,7 +15,30 @@ html, body {
 
 .container {
     width: 100%;
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 1rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+footer {
+    color: var(--color-muted);
+    background-color: var(--color-header-bg);
+}
+header {
+    background-color: var(--color-header-bg);
+    box-shadow: 0 1px 4px var(--color-header-shadow);
+    z-index: 10;
+    position: relative;
+}
+
